@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\robel\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\robel\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_Gasha.-1078766162.00" t="ExcludeRecursive" />
+    <e p="C:\Users\robel\Documents\Unity\Gasha" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="EffectExamples" t="Include">
+          <e p="Shared" t="Include">
+            <e p="Shaders" t="Include">
+              <e p="SurfaceShader_VC.shader" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="JMO Assets" t="Include">
+          <e p="Cartoon FX" t="Include">
+            <e p="CartoonFX Free.txt" t="Include" />
+            <e p="Demo" t="Include">
+              <e p="Assets" t="Include">
+                <e p="CFX_AutoStopLoopedEffect.cs" t="Include" />
+                <e p="CFX_Demo_New.cs" t="Include" />
+                <e p="CFX_Demo_RandomDir.cs" t="Include" />
+                <e p="CFX_Demo_RandomDirectionTranslate.cs" t="Include" />
+                <e p="CFX_Demo_RotateCamera.cs" t="Include" />
+                <e p="CFX_Demo_Translate.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="CFX_AutoDestructShuriken.cs" t="Include" />
+              <e p="CFX_AutoRotate.cs" t="Include" />
+              <e p="CFX_LightFlicker.cs" t="Include" />
+              <e p="CFX_LightIntensityFade.cs" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="CFX3 Multiply Color.shader" t="Include" />
+              <e p="CFXM_MobileParticleAdd_Alpha8.shader" t="Include" />
+            </e>
+          </e>
+          <e p="Cartoon FX Easy Editor" t="Include">
+            <e p="CartoonFX Easy Editor Readme.txt" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="CFXEasyEditor.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Dome.cs" t="Include" />
+          <e p="GuidedMissileController.cs" t="Include" />
+          <e p="ProjectileMissileController.cs" t="Include" />
+          <e p="Test.cs" t="Include" />
+          <e p="TrackerAi.cs" t="Include" />
+          <e p="Trainer.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Gasha.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
