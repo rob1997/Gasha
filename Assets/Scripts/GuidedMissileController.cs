@@ -13,7 +13,7 @@ public class GuidedMissileController : MonoBehaviour
     
     [SerializeField] private GameObject explosionEffect;
     
-    public bool trainingMode;
+    public bool trainingMode = true;
     
     private Rigidbody _rBody;
 
@@ -44,9 +44,9 @@ public class GuidedMissileController : MonoBehaviour
 //        Steer(x, y);
 //    }
 
-    public void Launch()
+    public void Launch(float power)
     {
-        _rBody.velocity = transform.forward.normalized * thrust;
+        _rBody.velocity = transform.forward.normalized * (power * thrust);
     }
     
     public void Steer(float x, float y)

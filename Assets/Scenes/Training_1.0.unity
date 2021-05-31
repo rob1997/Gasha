@@ -1909,7 +1909,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26610
+  m_Name: pb_Mesh-83300
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5463,7 +5463,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26844
+  m_Name: pb_Mesh-84070
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5791,7 +5791,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27350
+  m_Name: pb_Mesh-86216
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6641,7 +6641,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27188
+  m_Name: pb_Mesh-83536
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6805,7 +6805,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26740
+  m_Name: pb_Mesh-85098
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7297,7 +7297,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4826
+  m_Name: pb_Mesh-86706
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7953,7 +7953,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27480
+  m_Name: pb_Mesh-85402
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8281,7 +8281,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26984
+  m_Name: pb_Mesh-85902
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8773,7 +8773,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27494
+  m_Name: pb_Mesh-85456
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8937,7 +8937,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26612
+  m_Name: pb_Mesh-83310
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9448,7 +9448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.VectorActionSize.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.VectorActionSize.Array.data[0]
@@ -9464,7 +9464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.m_ActionSpec.m_NumContinuousActions
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.m_ActionSpec.BranchSizes.Array.data[0]
@@ -9521,6 +9521,14 @@ PrefabInstance:
     - target: {fileID: 6552183216011094805, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_Name
       value: GuidedMissle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552183216011094806, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
+      propertyPath: thrust
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552183216011094806, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
+      propertyPath: trainingMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6552183216014778301, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_Mesh
@@ -10549,7 +10557,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27490
+  m_Name: pb_Mesh-85436
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11206,7 +11214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.VectorActionSize.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.VectorActionSize.Array.data[0]
@@ -11222,7 +11230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.m_ActionSpec.m_NumContinuousActions
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.m_ActionSpec.BranchSizes.Array.data[0]
@@ -11279,6 +11287,14 @@ PrefabInstance:
     - target: {fileID: 6552183216011094805, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_Name
       value: GuidedMissle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552183216011094806, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
+      propertyPath: thrust
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552183216011094806, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
+      propertyPath: trainingMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6552183216014778301, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_Mesh
@@ -14307,7 +14323,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26982
+  m_Name: pb_Mesh-85892
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17879,7 +17895,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27200
+  m_Name: pb_Mesh-83580
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19447,7 +19463,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26972
+  m_Name: pb_Mesh-85848
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19775,7 +19791,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27482
+  m_Name: pb_Mesh-85412
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -20103,7 +20119,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27358
+  m_Name: pb_Mesh-86250
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -20759,7 +20775,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27356
+  m_Name: pb_Mesh-86240
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -20923,7 +20939,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26728
+  m_Name: pb_Mesh-85044
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -22855,7 +22871,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27196
+  m_Name: pb_Mesh-83560
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23948,7 +23964,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26978
+  m_Name: pb_Mesh-85872
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -24946,7 +24962,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4796
+  m_Name: pb_Mesh-86676
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25274,7 +25290,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27354
+  m_Name: pb_Mesh-86230
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25621,7 +25637,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.VectorActionSize.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.VectorActionSize.Array.data[0]
@@ -25637,7 +25653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.m_ActionSpec.m_NumContinuousActions
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.m_ActionSpec.BranchSizes.Array.data[0]
@@ -25694,6 +25710,14 @@ PrefabInstance:
     - target: {fileID: 6552183216011094805, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_Name
       value: GuidedMissle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552183216011094806, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
+      propertyPath: thrust
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552183216011094806, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
+      propertyPath: trainingMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6552183216014778301, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_Mesh
@@ -29479,7 +29503,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26614
+  m_Name: pb_Mesh-83320
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29789,7 +29813,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26846
+  m_Name: pb_Mesh-84080
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29953,7 +29977,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27360
+  m_Name: pb_Mesh-86260
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -35462,7 +35486,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26856
+  m_Name: pb_Mesh-84114
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -38525,7 +38549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.VectorActionSize.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.VectorActionSize.Array.data[0]
@@ -38541,7 +38565,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.m_ActionSpec.m_NumContinuousActions
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.m_ActionSpec.BranchSizes.Array.data[0]
@@ -38598,6 +38622,14 @@ PrefabInstance:
     - target: {fileID: 6552183216011094805, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_Name
       value: GuidedMissle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552183216011094806, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
+      propertyPath: thrust
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552183216011094806, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
+      propertyPath: trainingMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6552183216014778301, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_Mesh
@@ -39631,7 +39663,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4816
+  m_Name: pb_Mesh-86696
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -41563,7 +41595,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27190
+  m_Name: pb_Mesh-83546
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -42693,7 +42725,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26600
+  m_Name: pb_Mesh-83266
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -43841,7 +43873,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4806
+  m_Name: pb_Mesh-86686
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -44333,7 +44365,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27492
+  m_Name: pb_Mesh-85446
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -44825,7 +44857,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4782
+  m_Name: pb_Mesh-86662
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -48105,7 +48137,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26736
+  m_Name: pb_Mesh-85078
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -49450,7 +49482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.VectorActionSize.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.VectorActionSize.Array.data[0]
@@ -49466,7 +49498,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.m_ActionSpec.m_NumContinuousActions
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.m_ActionSpec.BranchSizes.Array.data[0]
@@ -49523,6 +49555,14 @@ PrefabInstance:
     - target: {fileID: 6552183216011094805, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_Name
       value: GuidedMissle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552183216011094806, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
+      propertyPath: thrust
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552183216011094806, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
+      propertyPath: trainingMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6552183216014778301, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_Mesh
@@ -53339,7 +53379,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26852
+  m_Name: pb_Mesh-84094
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -53667,7 +53707,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27198
+  m_Name: pb_Mesh-83570
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -53831,7 +53871,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26854
+  m_Name: pb_Mesh-84104
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -55704,7 +55744,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26608
+  m_Name: pb_Mesh-83290
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -57982,7 +58022,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26602
+  m_Name: pb_Mesh-83276
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -60917,7 +60957,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.VectorActionSize.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.VectorActionSize.Array.data[0]
@@ -60933,7 +60973,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.m_ActionSpec.m_NumContinuousActions
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.m_ActionSpec.BranchSizes.Array.data[0]
@@ -60990,6 +61030,14 @@ PrefabInstance:
     - target: {fileID: 6552183216011094805, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_Name
       value: GuidedMissle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552183216011094806, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
+      propertyPath: thrust
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552183216011094806, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
+      propertyPath: trainingMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6552183216014778301, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_Mesh
@@ -62969,7 +63017,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26730
+  m_Name: pb_Mesh-85054
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -64313,7 +64361,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27488
+  m_Name: pb_Mesh-85426
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -67849,7 +67897,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26734
+  m_Name: pb_Mesh-85068
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -69535,7 +69583,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26738
+  m_Name: pb_Mesh-85088
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -71522,7 +71570,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.VectorActionSize.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.VectorActionSize.Array.data[0]
@@ -71538,7 +71586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.m_ActionSpec.m_NumContinuousActions
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.m_ActionSpec.BranchSizes.Array.data[0]
@@ -71595,6 +71643,14 @@ PrefabInstance:
     - target: {fileID: 6552183216011094805, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_Name
       value: GuidedMissle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552183216011094806, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
+      propertyPath: thrust
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552183216011094806, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
+      propertyPath: trainingMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6552183216014778301, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_Mesh
@@ -72441,7 +72497,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27202
+  m_Name: pb_Mesh-83590
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -73619,7 +73675,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26858
+  m_Name: pb_Mesh-84124
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -73977,7 +74033,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27348
+  m_Name: pb_Mesh-86206
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -76165,7 +76221,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26974
+  m_Name: pb_Mesh-85858
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -76396,7 +76452,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33a176fbb6b8bf64b907fc9c99668327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileMissileControllers: []
+  projectileMissileController: {fileID: 0}
+  trackerAi: {fileID: 0}
+  dome: {fileID: 0}
 --- !u!43 &2065204922
 Mesh:
   m_ObjectHideFlags: 0
@@ -78371,7 +78429,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26980
+  m_Name: pb_Mesh-85882
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -79551,7 +79609,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4772
+  m_Name: pb_Mesh-86652
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -80584,7 +80642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.VectorActionSize.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.VectorActionSize.Array.data[0]
@@ -80600,7 +80658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.m_ActionSpec.m_NumContinuousActions
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 922755880, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_BrainParameters.m_ActionSpec.BranchSizes.Array.data[0]
@@ -80657,6 +80715,14 @@ PrefabInstance:
     - target: {fileID: 6552183216011094805, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_Name
       value: GuidedMissle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552183216011094806, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
+      propertyPath: thrust
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552183216011094806, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
+      propertyPath: trainingMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6552183216014778301, guid: 33951f6711c522a4c8cdc01c17706c32, type: 3}
       propertyPath: m_Mesh

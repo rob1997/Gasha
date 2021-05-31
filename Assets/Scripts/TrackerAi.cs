@@ -19,7 +19,7 @@ public class TrackerAi : Agent
     
     private float _angle;
     private float _previousAngle;
-    
+
     public override void Initialize()
     {
         _guidedMissileController = GetComponent<GuidedMissileController>();
@@ -56,7 +56,9 @@ public class TrackerAi : Agent
     /// <param name="actions">The actions to take</param>
     public override void OnActionReceived(ActionBuffers actions)
     {
-        _guidedMissileController.Launch();
+        float power = Mathf.Clamp(actions.ContinuousActions[0], 0, 1f);
+        
+        _guidedMissileController.Launch(power);
         
         float x = 0;
         float y = 0;
@@ -90,7 +92,9 @@ public class TrackerAi : Agent
 
         if (_distance < 2f)
         {
-            AddReward(.5f);
+            AddReward(_previousDistance - _distance);
+            
+            AddReward(_previousAngle - _angle);
 
             if (trainingMode)
             {

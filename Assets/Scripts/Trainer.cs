@@ -7,7 +7,11 @@ using Random = UnityEngine.Random;
 
 public class Trainer : MonoBehaviour
 {
-    public List<ProjectileMissileController> projectileMissileControllers;
+    public ProjectileMissileController projectileMissileController;
+    
+    //public TrackerAi trackerAi;
+    
+    //public Dome dome;
 
     private const string _groundTag = "TargetGround";
     
@@ -18,32 +22,36 @@ public class Trainer : MonoBehaviour
     
     private void Start()
     {
-        projectileMissileControllers.ForEach(controller =>
-        {
-            ResetProjectileMissile(controller);
-            controller.OnDetonation += collision =>
-            {
-                if (collision.gameObject.CompareTag(_groundTag))
-                {
-                    Debug.LogError($"Ground Hit : {++_groundHit}");
-                }
-                
-                else if (collision.gameObject.CompareTag(_guidedMissileTag))
-                {
-                    Debug.LogError($"Interception Hit : {++_interceptionHit}");
-                }
+//        trackerAi.target = trackerAi.transform;
+        
+        ResetProjectileMissile();
 
-                else
-                {
-                    Debug.LogError($"Unknown Hit : {collision.gameObject.tag}");
-                }
+//        dome.OnEntry += other => { trackerAi.target = other.transform; };
+        
+        projectileMissileController.OnDetonation += collision =>
+        {
+            if (collision.gameObject.CompareTag(_groundTag))
+            {
+                Debug.LogError($"Ground Hit : {++_groundHit}");
+            }
                 
-                ResetProjectileMissile(controller);
-            };
-        });
+            else if (collision.gameObject.CompareTag(_guidedMissileTag))
+            {
+                Debug.LogError($"Interception Hit : {++_interceptionHit}");
+//                trackerAi.AddReward(.5f);
+//                trackerAi.target = trackerAi.transform;
+            }
+
+            else
+            {
+                Debug.LogError($"Unknown Hit : {collision.gameObject.tag}");
+            }
+                
+            ResetProjectileMissile();
+        };
     }
 
-    private void ResetProjectileMissile(ProjectileMissileController projectileMissileController)
+    private void ResetProjectileMissile()
     {
         Vector3 position = Vector3.zero;
 
