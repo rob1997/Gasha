@@ -46,11 +46,12 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="DasherAi.cs" t="Include" />
           <e p="Dome.cs" t="Include" />
           <e p="GuidedMissileController.cs" t="Include" />
           <e p="ProjectileMissileController.cs" t="Include" />
+          <e p="SeekerAi.cs" t="Include" />
           <e p="Test.cs" t="Include" />
-          <e p="TrackerAi.cs" t="Include" />
           <e p="Trainer.cs" t="Include" />
         </e>
       </e>

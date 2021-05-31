@@ -7,7 +7,7 @@ using Unity.MLAgents.Sensors;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class TrackerAi : Agent
+public class SeekerAi : Agent
 {
     private GuidedMissileController _guidedMissileController;
 

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 922755879}
   - component: {fileID: 922755881}
   m_Layer: 8
-  m_Name: GuidedMissleHeavy
+  m_Name: SeekerMissle
   m_TagString: GuidedMissile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86,7 +86,7 @@ MonoBehaviour:
   thrust: 50
   torque: 5
   explosionEffect: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56, type: 3}
-  trainingMode: 0
+  trainingMode: 1
 --- !u!114 &922755880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,10 +109,10 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: fd51784a9342e6a4d93314c51b628907, type: 3}
+  m_Model: {fileID: 0}
   m_InferenceDevice: 0
   m_BehaviorType: 0
-  m_BehaviorName: tracker
+  m_BehaviorName: seeker
   TeamId: 0
   m_UseChildSensors: 1
   m_UseChildActuators: 1
@@ -132,9 +132,9 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 5000
   target: {fileID: 0}
-  trainingMode: 0
+  trainingMode: 1
 --- !u!114 &922755881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -948,7 +948,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6552183216080729229
 Transform:
   m_ObjectHideFlags: 0
@@ -5629,7 +5629,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6552183216082137794
 Transform:
   m_ObjectHideFlags: 0

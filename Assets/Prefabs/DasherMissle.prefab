@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 6552183216011094807}
   - component: {fileID: 6552183216011094801}
   - component: {fileID: 6552183216011094806}
-  - component: {fileID: 922755880}
-  - component: {fileID: 922755879}
-  - component: {fileID: 922755881}
+  - component: {fileID: 5871517917871639019}
+  - component: {fileID: 2754547509944614367}
+  - component: {fileID: 6142317247429288623}
   m_Layer: 8
-  m_Name: GuidedMissleHeavy
+  m_Name: DasherMissle
   m_TagString: GuidedMissile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,11 +83,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 712a1e686a254924d8ea8d2f9d487d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 50
-  torque: 5
+  thrust: 35
+  torque: 7.5
   explosionEffect: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56, type: 3}
-  trainingMode: 0
---- !u!114 &922755880
+  trainingMode: 1
+--- !u!114 &5871517917871639019
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,15 +109,15 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: fd51784a9342e6a4d93314c51b628907, type: 3}
+  m_Model: {fileID: 0}
   m_InferenceDevice: 0
   m_BehaviorType: 0
-  m_BehaviorName: tracker
+  m_BehaviorName: dasher
   TeamId: 0
   m_UseChildSensors: 1
   m_UseChildActuators: 1
   m_ObservableAttributeHandling: 0
---- !u!114 &922755879
+--- !u!114 &2754547509944614367
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6552183216011094805}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 655ddfdbbf45ef6469e13a7d8f4678e0, type: 3}
+  m_Script: {fileID: 11500000, guid: 6def1cd7bef60aa4ca2d704e362c9e17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   agentParameters:
@@ -134,8 +134,8 @@ MonoBehaviour:
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
   target: {fileID: 0}
-  trainingMode: 0
---- !u!114 &922755881
+  trainingMode: 1
+--- !u!114 &6142317247429288623
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -948,7 +948,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6552183216080729229
 Transform:
   m_ObjectHideFlags: 0
@@ -5629,7 +5629,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6552183216082137794
 Transform:
   m_ObjectHideFlags: 0
