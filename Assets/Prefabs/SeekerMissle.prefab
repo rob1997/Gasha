@@ -135,6 +135,8 @@ MonoBehaviour:
   MaxStep: 5000
   target: {fileID: 0}
   trainingMode: 1
+  lowerBound: -100
+  upperBound: 100
 --- !u!114 &922755881
 MonoBehaviour:
   m_ObjectHideFlags: 0

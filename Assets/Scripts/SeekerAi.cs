@@ -13,24 +13,31 @@ public class SeekerAi : Agent
 
     public Transform target;
     public bool trainingMode = true;
+    
+    public float lowerBound = - 100f;
+    public float upperBound = 100f;
 
+    private ProjectileMissileController _projectileMissileController;
+    
+    private Rigidbody _targetRigidBody;
+    
     private float _distance;
     private float _previousDistance;
     
     private float _angle;
     private float _previousAngle;
 
+    private float _targetDestinationY;
+    
     public override void Initialize()
     {
         _guidedMissileController = GetComponent<GuidedMissileController>();
 
-        _guidedMissileController.OnDetonation += other =>
+        if (trainingMode)
         {
-            if (!trainingMode)
-            {
-                Destroy(gameObject);
-            }
-        };
+            _projectileMissileController = target.GetComponent<ProjectileMissileController>();
+            _targetRigidBody = target.GetComponent<Rigidbody>();
+        }
     }
 
     public override void OnEpisodeBegin()
@@ -91,22 +98,10 @@ public class SeekerAi : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        _distance = CalculateDistance();
-
-        if (_distance < 2f)
-        {
-            AddReward(_previousDistance - _distance);
-            
-            AddReward(_previousAngle - _angle);
-
-            if (trainingMode)
-            {
-                Restart();
-            }
-        }
-        
         Vector3 targetPosition = target.position;
         
+        _distance = CalculateDistance();
+
         //position if _target with respect to vehicle (localized)
         Vector3 localTarget = transform.InverseTransformPoint(targetPosition);
         
@@ -138,37 +133,65 @@ public class SeekerAi : Agent
         //4 observations
         sensor.AddObservation(transform.localRotation.normalized);
         
-        //add reward if target is closer from missile and punish if further
-        AddReward(_previousDistance - _distance);
+        if (_distance < 2f || targetPosition.y < _targetDestinationY)
+        {
+            AddReward(_previousDistance - _distance);
+            
+            AddReward(_previousAngle - _angle);
+
+            if (trainingMode)
+            {
+                Restart();
+            }
+        }
+
+        else
+        {
+            //add reward if target is closer from missile and punish if further
+            AddReward(_previousDistance - _distance);
         
-        _previousDistance = _distance;
+            _previousDistance = _distance;
         
-        //add reward if angle is closer to target and punish if further
-        AddReward(_previousAngle - _angle);
+            //add reward if angle is closer to target and punish if further
+            AddReward(_previousAngle - _angle);
         
-        _previousAngle = _angle;
+            _previousAngle = _angle;
+        }
     }
 
     private void Restart()
     {
-        Vector3 position = Vector3.zero;
-
-        position.x = Random.Range(-100f, 100f);
-        position.y = Random.Range(- 100f, 100f);
-        position.z = Random.Range(-100f, 100f);
-
-        transform.position = position;
+        ResetPosition();
         
-        Vector3 targetPosition = Vector3.zero;
-
-        targetPosition.x = Random.Range(-100f, 100f);
-        targetPosition.y = Random.Range(- 100f, 100f);
-        targetPosition.z = Random.Range(-100f, 100f);
+        LaunchTarget();
         
-        target.position = targetPosition;
-     
         _guidedMissileController.Sleep();
         
+        Recalculate();
+    }
+
+    private void LaunchTarget()
+    {
+        _targetDestinationY = Random.Range(lowerBound, target.position.y);
+        
+        _projectileMissileController.Sleep();
+
+        Vector3 targetDestination = GetRandomV3InBounds();
+
+        targetDestination.y = _targetDestinationY;
+        
+        _projectileMissileController.Launch(Random.Range(15f, 75f), targetDestination);
+    }
+    
+    private void ResetPosition()
+    {
+        transform.position = GetRandomV3InBounds();
+        
+        target.position = GetRandomV3InBounds();
+    }
+    
+    private void Recalculate()
+    {
         _distance = CalculateDistance();
         
         _previousDistance = _distance;
@@ -186,5 +209,15 @@ public class SeekerAi : Agent
     private float CalculateAngle()
     {
         return Vector3.Angle(transform.forward, target.position - transform.position);
+    }
+
+    private float GetRandomInBounds()
+    {
+        return Random.Range(lowerBound, upperBound);
+    }
+    
+    private Vector3 GetRandomV3InBounds()
+    {
+        return new Vector3(GetRandomInBounds(), GetRandomInBounds(), GetRandomInBounds());
     }
 }
