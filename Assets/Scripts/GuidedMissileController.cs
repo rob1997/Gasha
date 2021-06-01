@@ -66,13 +66,20 @@ public class GuidedMissileController : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+        InvokeDetonation(other);
+        
         if (!trainingMode)
         {
-            GameObject explosion = Instantiate(explosionEffect, transform.position, Quaternion.identity);
-                            
-            Destroy(explosion, 2f);
+            Destroy();
         }
+    }
+
+    public void Destroy()
+    {
+        GameObject explosion = Instantiate(explosionEffect, transform.position, Quaternion.identity);
+                            
+        Destroy(explosion, 2f);
         
-        InvokeDetonation(other);
+        Destroy(gameObject);
     }
 }

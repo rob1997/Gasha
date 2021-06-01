@@ -60,28 +60,31 @@ public class DasherAi : Agent
         
         _guidedMissileController.Launch(power);
         
-        float x = 0;
-        float y = 0;
+        float x = Mathf.Clamp(actions.ContinuousActions[1], - 1f, 1f);
+        float y = Mathf.Clamp(actions.ContinuousActions[2], - 1f, 1f);
         
-        switch (actions.DiscreteActions[0])
-        {
-            case 0:
-                x = -1;
-                break;
-            case 1:
-                x = 1;
-                break;
-        }
-        
-        switch (actions.DiscreteActions[1])
-        {
-            case 0:
-                y = -1;
-                break;
-            case 1:
-                y = 1;
-                break;
-        }
+//        float x = 0;
+//        float y = 0;
+//        
+//        switch (actions.DiscreteActions[0])
+//        {
+//            case 0:
+//                x = -1;
+//                break;
+//            case 1:
+//                x = 1;
+//                break;
+//        }
+//        
+//        switch (actions.DiscreteActions[1])
+//        {
+//            case 0:
+//                y = -1;
+//                break;
+//            case 1:
+//                y = 1;
+//                break;
+//        }
 
         _guidedMissileController.Steer(x, y);
     }

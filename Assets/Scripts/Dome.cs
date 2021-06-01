@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -21,16 +22,34 @@ public class Dome : MonoBehaviour
     }
 
     #endregion
-    
+
+    private Transform[] _batteries;
+
+    private void Start()
+    {
+        _batteries = GetComponentsInChildren<Transform>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         InvokeEntry(other);
         
-        GameObject guidedMissile = Instantiate(guidedMissilePrefab);
+        GameObject guidedMissile = Instantiate(guidedMissilePrefab, 
+            GetClosestBattery(other.transform.position).position, Quaternion.LookRotation(Vector3.up));
+
+        other.GetComponent<ProjectileMissileController>().OnDetonation += collision =>
+        {
+            if (guidedMissile != null)
+            {
+                guidedMissile.GetComponent<GuidedMissileController>().Destroy();
+            }
+        };
         
         guidedMissile.GetComponent<SeekerAi>().target = other.transform;
+    }
 
-        guidedMissile.transform.position = new Vector3(50f,2.75f,50f);
-        guidedMissile.transform.rotation = Quaternion.LookRotation(Vector3.up);
+    private Transform GetClosestBattery(Vector3 position)
+    {
+        return _batteries.OrderBy(b => Vector3.Distance(b.position, position)).First();
     }
 }

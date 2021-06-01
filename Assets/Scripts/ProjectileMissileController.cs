@@ -67,9 +67,7 @@ public class ProjectileMissileController : MonoBehaviour
     {
         if (!trainingMode)
         {
-            GameObject explosion = Instantiate(explosionEffect, transform.position, Quaternion.identity); 
-            
-            Destroy(explosion, 2f);
+            Destroy();
         }
         
         InvokeDetonation(other);
@@ -78,5 +76,12 @@ public class ProjectileMissileController : MonoBehaviour
     public void Sleep()
     {
         _rBody.Sleep();
+    }
+
+    public void Destroy()
+    {
+        GameObject explosion = Instantiate(explosionEffect, transform.position, Quaternion.identity); 
+            
+        Destroy(explosion, 2f);
     }
 }

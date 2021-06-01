@@ -103,13 +103,13 @@ MonoBehaviour:
     VectorObservationSize: 12
     NumStackedVectorObservations: 1
     m_ActionSpec:
-      m_NumContinuousActions: 1
-      BranchSizes: 0200000002000000
-    VectorActionSize: 
+      m_NumContinuousActions: 3
+      BranchSizes: 
+    VectorActionSize: 03000000
     VectorActionDescriptions: []
-    VectorActionSpaceType: 0
+    VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 26adafec2316aad45ab804aa0b57842b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: b8c2b5f147681b04eac57b60525a6dff, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: tracker
