@@ -93,18 +93,6 @@ public class SeekerAi : Agent
     {
         _distance = CalculateDistance();
 
-        if (_distance < 2f)
-        {
-            AddReward(_previousDistance - _distance);
-            
-            AddReward(_previousAngle - _angle);
-
-            if (trainingMode)
-            {
-                Restart();
-            }
-        }
-        
         Vector3 targetPosition = target.position;
         
         //position if _target with respect to vehicle (localized)
@@ -128,15 +116,19 @@ public class SeekerAi : Agent
         
         //1 Observation
         sensor.AddObservation(Mathf.Sign(cross.y) * _angle);
+
+        Vector3 velocity = _guidedMissileController.GetVelocity();
         
-        
-        Vector3 localVelocity = transform.InverseTransformDirection(_guidedMissileController.GetVelocity());
+        Vector3 localVelocity = transform.InverseTransformDirection(velocity);
         
         //3 observation
         sensor.AddObservation(localVelocity);
         
         //4 observations
         sensor.AddObservation(transform.localRotation.normalized);
+        
+        //1 Observation
+        sensor.AddObservation(velocity.magnitude);
         
         //add reward if target is closer from missile and punish if further
         AddReward(_previousDistance - _distance);
@@ -147,6 +139,19 @@ public class SeekerAi : Agent
         AddReward(_previousAngle - _angle);
         
         _previousAngle = _angle;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.name == target.name)
+        {
+            AddReward(_guidedMissileController.GetVelocity().magnitude);
+            
+            if (trainingMode)
+            {
+                Restart();
+            }
+        }
     }
 
     private void Restart()

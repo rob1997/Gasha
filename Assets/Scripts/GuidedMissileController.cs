@@ -6,8 +6,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class GuidedMissileController : MonoBehaviour
 {
-    [SerializeField] private float thrust;
-    [SerializeField] private float torque;
+    public float thrust;
+    public float torque;
     
     [Space]
     
