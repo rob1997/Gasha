@@ -53,10 +53,8 @@ public class Trainer : MonoBehaviour
     {
         Transform childCrust = crust.GetChild(Random.Range(0, crust.childCount));
 
-        Vector3 position = childCrust.TransformPoint(new Vector3(Random.Range(0, 100f), 0, Random.Range(0, 100f)));
+        Vector3 position = childCrust.TransformPoint(new Vector3(Random.Range(0, 100f), 5f, Random.Range(0, 100f)));
 
-        position.y = 2.75f;
-        
         projectileMissileController.transform.position = position;
         
         projectileMissileController.transform.rotation = Quaternion.LookRotation(Vector3.up);

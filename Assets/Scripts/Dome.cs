@@ -27,7 +27,12 @@ public class Dome : MonoBehaviour
 
     private void Start()
     {
-        _batteries = GetComponentsInChildren<Transform>();
+        _batteries = new Transform[transform.childCount];
+        
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            _batteries[i] = transform.GetChild(i);
+        }
     }
 
     private void OnTriggerEnter(Collider other)

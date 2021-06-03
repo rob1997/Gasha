@@ -44,9 +44,9 @@ public class GuidedMissileController : MonoBehaviour
 //        Steer(x, y);
 //    }
 
-    public void Launch(float power)
+    public void Launch()
     {
-        _rBody.velocity = transform.forward.normalized * (power * thrust);
+        _rBody.velocity = transform.forward.normalized * thrust;
     }
     
     public void Steer(float x, float y)

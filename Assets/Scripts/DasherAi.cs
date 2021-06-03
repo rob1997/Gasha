@@ -56,12 +56,12 @@ public class DasherAi : Agent
     /// <param name="actions">The actions to take</param>
     public override void OnActionReceived(ActionBuffers actions)
     {
-        float power = Mathf.Clamp(actions.ContinuousActions[0], 0, 1f);
-        
-        _guidedMissileController.Launch(power);
-        
-        float x = Mathf.Clamp(actions.ContinuousActions[1], - 1f, 1f);
-        float y = Mathf.Clamp(actions.ContinuousActions[2], - 1f, 1f);
+//        float power = Mathf.Clamp(actions.ContinuousActions[0], 0, 1f);
+//        
+//        _guidedMissileController.Launch(power);
+//        
+//        float x = Mathf.Clamp(actions.ContinuousActions[1], - 1f, 1f);
+//        float y = Mathf.Clamp(actions.ContinuousActions[2], - 1f, 1f);
         
 //        float x = 0;
 //        float y = 0;
@@ -86,7 +86,7 @@ public class DasherAi : Agent
 //                break;
 //        }
 
-        _guidedMissileController.Steer(x, y);
+        //_guidedMissileController.Steer(x, y);
     }
 
     public override void CollectObservations(VectorSensor sensor)

@@ -56,35 +56,39 @@ public class SeekerAi : Agent
     /// <param name="actions">The actions to take</param>
     public override void OnActionReceived(ActionBuffers actions)
     {
-        float power = Mathf.Clamp(actions.ContinuousActions[0], 0, 1f);
+        _guidedMissileController.Launch();
         
-        _guidedMissileController.Launch(power);
+//        float x = Mathf.Clamp(actions.ContinuousActions[0], - 1f, 1f);
+//        float y = Mathf.Clamp(actions.ContinuousActions[1], - 1f, 1f);
         
-        float x = Mathf.Clamp(actions.ContinuousActions[1], - 1f, 1f);
-        float y = Mathf.Clamp(actions.ContinuousActions[2], - 1f, 1f);
+        float x = 0;
+        float y = 0;
         
-//        float x = 0;
-//        float y = 0;
-//        
-//        switch (actions.DiscreteActions[0])
-//        {
-//            case 0:
-//                x = -1;
-//                break;
-//            case 1:
-//                x = 1;
-//                break;
-//        }
-//        
-//        switch (actions.DiscreteActions[1])
-//        {
-//            case 0:
-//                y = -1;
-//                break;
-//            case 1:
-//                y = 1;
-//                break;
-//        }
+        switch (actions.DiscreteActions[0])
+        {
+            case 0:
+                x = 0;
+                break;
+            case 1:
+                x = - 1;
+                break;
+            case 2:
+                x = 1;
+                break;
+        }
+        
+        switch (actions.DiscreteActions[1])
+        {
+            case 0:
+                y = 0;
+                break;
+            case 1:
+                y = - 1;
+                break;
+            case 2:
+                y = 1;
+                break;
+        }
 
         _guidedMissileController.Steer(x, y);
     }
@@ -126,9 +130,6 @@ public class SeekerAi : Agent
         
         //4 observations
         sensor.AddObservation(transform.localRotation.normalized);
-        
-        //1 Observation
-        sensor.AddObservation(velocity.magnitude);
         
         //add reward if target is closer from missile and punish if further
         AddReward(_previousDistance - _distance);
