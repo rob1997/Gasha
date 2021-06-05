@@ -40,6 +40,10 @@ public class ProjectileMissileController : MonoBehaviour
 
     public void Launch(float launchAngle, Vector3 destination)
     {
+        Vector3 yFactor = Vector3.up * transform.position.y;
+        transform.position -= yFactor;
+        destination -= yFactor;
+        
         Vector3 origin = transform.position;
 
         Vector3 originXz = new Vector3(origin.x, 0.0f, origin.z);
@@ -53,12 +57,26 @@ public class ProjectileMissileController : MonoBehaviour
         float distanceX = Vector3.Distance(originXz, destinationXz);
         float height = destination.y - origin.y;
 
+        if (launchAngle > 0)
+        {
+            float minLaunchAngle = Vector3.Angle(destinationXz - origin, destination - origin);
+
+            if (launchAngle <= minLaunchAngle)
+            {
+                Debug.LogError($"Launch Angle is too low, minimum launch angle should be greater than {minLaunchAngle}");
+                
+                return;
+            }
+        }
+        
         float launchAngleTan = Mathf.Tan(launchAngle * Mathf.Deg2Rad);
         float localVelocityZ = Mathf.Sqrt(gravity * distanceX * distanceX / (2.0f * (height - distanceX * launchAngleTan)) );
         float localVelocityY = launchAngleTan * localVelocityZ;
 
         Vector3 localVelocity = new Vector3(0f, localVelocityY, localVelocityZ);
         Vector3 globalVelocity = transform.TransformDirection(localVelocity);
+        
+        transform.position += yFactor;
         
         _rBody.velocity = globalVelocity;
     }
